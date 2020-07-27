@@ -1,0 +1,23 @@
+
+**************************************************
+Coding Challenge - Stock Price Profit calculator
+**************************************************
+
+The function 'getMaxProfit' takes in a list of stock prices and calculates the best profit that could have been made from 1 purchase and 1 sale of the stock.
+The possible return values are -
+
+1. 0 meaning not enough indices to make a trade.
+2. -1 meaning profitable trade not possible.
+3. Result > 0 meaning the best profit possible.
+
+Unit tests are in place to validate some scenarios.
+
+Performance wise, this method does a full traversal of the list in the worst case scenario. ie the running time would be O(n)
+
+
+
+Comments/Assumptions
+----------------------
+
+* Since the function is meant to process the indexes for 1 day in minutes (max indices 1440), this approach works well. There is a unit test to validate this scenario.
+* Arguably the stock prices could be represented using BigDecimal, open for discussion
